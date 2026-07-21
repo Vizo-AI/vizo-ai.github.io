@@ -48,28 +48,39 @@
         <div class="container-fluid p-0">
             <!-- About / Hero-->
             <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Vijay
-                        <span class="text-primary">Sojitra</span>
-                    </h1>
-                    <div class="subheading mb-3">Full-Stack AI/ML Engineer &amp; Applied Statistician</div>
-                    <p class="capability-line mb-3">Data Engineering • Data Science • ML Platforms • MLOps/LLMOps • Agentic AI</p>
-                    <div class="location-email mb-3">
-                        Columbus, Ohio ·
-                        <a href="mailto:vjsojitra8@gmail.com">vjsojitra8@gmail.com</a>
+                <div class="resume-section-content hero-content">
+                    <div class="hero-identity">
+                        <h1 class="mb-0">
+                            Vijay
+                            <span class="text-primary">Sojitra</span>
+                        </h1>
+                        <div class="subheading hero-title">Full-Stack AI/ML Engineer &amp; Applied Statistician</div>
                     </div>
-                    <p class="lead mb-3">Builds the complete path from governed data pipelines and statistical modeling through experimentation, model and LLM deployment, evaluation, monitoring, APIs, and decision-support products.</p>
-                    <p class="credibility-line mb-4">10 years across analytics, data engineering, data science, machine learning and enterprise AI • Dual master’s degrees in Statistics and Statistical Data Science</p>
-                    <div class="cta-group mb-4" role="group" aria-label="Primary actions">
+                    <div class="hero-meta">
+                        <p class="capability-line">Data Engineering • Data Science • ML Platforms • MLOps/LLMOps • Agentic AI</p>
+                        <div class="location-email">
+                            Columbus, Ohio ·
+                            <a href="mailto:vjsojitra8@gmail.com">vjsojitra8@gmail.com</a>
+                        </div>
+                    </div>
+                    <p class="lead hero-summary">Builds the complete path from governed data pipelines and statistical modeling through experimentation, model and LLM deployment, evaluation, monitoring, APIs, and decision-support products.</p>
+                    <div class="hero-proof-grid" aria-label="Professional credentials">
+                        <div class="hero-proof-item">
+                            <strong>10 years</strong>
+                            <span>Analytics, data engineering, machine learning and enterprise AI</span>
+                        </div>
+                        <div class="hero-proof-item">
+                            <strong>Dual master’s degrees</strong>
+                            <span>Statistics and Statistical Data Science</span>
+                        </div>
+                    </div>
+                    <div class="cta-group hero-actions" role="group" aria-label="Primary actions">
                         <a class="btn btn-cta btn-cta-primary js-scroll-trigger" href="#selected-work">Selected Work</a>
-                        <a class="btn btn-cta btn-cta-outline" href="https://github.com/Vizo-AI" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a class="btn btn-cta btn-cta-outline" href="https://www.linkedin.com/in/vijaysojitra" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a class="btn btn-cta btn-cta-outline js-scroll-trigger" href="#contact">Contact</a>
                     </div>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/vijaysojitra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/Vizo-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    <div class="social-icons hero-social">
+                        <a class="social-icon social-icon-linkedin" href="https://www.linkedin.com/in/vijaysojitra" target="_blank" rel="noopener noreferrer" aria-label="View Vijay Sojitra on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a class="social-icon social-icon-github" href="https://github.com/Vizo-AI" target="_blank" rel="noopener noreferrer" aria-label="View Vijay Sojitra on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </section>
@@ -80,167 +91,207 @@
                     <h2 class="mb-4">Selected Work</h2>
 
                     <h3 class="work-group-title">Enterprise AI/ML Systems</h3>
-                    <div class="row project-card-row g-4 mb-5">
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
+                    <div class="enterprise-project-grid">
+                        <article class="project-card">
+                            <div class="project-card-body">
+                                <p class="project-card-category">Large-Scale Data Engineering</p>
                                 <h4 class="project-card-title">Package Network Fingerprint &amp; Temperature Intelligence</h4>
                                 <p class="project-card-summary">Large-scale Azure Databricks/PySpark pipeline that derives package-network fingerprint and temperature intelligence from multi-billion-row operational source data.</p>
                                 <ul class="project-card-list">
                                     <li>Native PySpark transformations with partition-aware joins, window operations, column pruning, and selective caching—no Python UDFs</li>
-                                    <li>Approximately 4.5 billion source rows, ~200 million Fingerprint records, and ~22 million Temperature outputs</li>
-                                    <li>Normalized Temperature score from cold 0 to hot 1</li>
+                                    <li>Approximately 4.5 billion source rows producing ~200 million Fingerprint records and ~22 million Temperature outputs with a normalized score from cold 0 to hot 1</li>
                                     <li>Row-count reconciliation, duplicate detection, and null/range validation</li>
                                 </ul>
+                            </div>
+                            <div class="project-card-footer">
                                 <p class="project-card-impact"><span class="impact-label">Scale:</span> Multi-billion-row governed transforms on Azure Databricks without exposing proprietary source tables or identifiers.</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card-body">
+                                <p class="project-card-category">Enterprise GenAI</p>
                                 <h4 class="project-card-title">Governed Self-Service Operations Intelligence</h4>
                                 <p class="project-card-summary">Employee-facing AI system that routes natural-language requests between structured-data querying and cited document retrieval under enterprise governance controls.</p>
                                 <ul class="project-card-list">
                                     <li>Natural-language-to-SQL with schema grounding, approved patterns, validation, plausibility checks, and restricted execution</li>
-                                    <li>Azure AI Search hybrid retrieval with semantic chunking, reranking, citations, and answerability thresholds</li>
-                                    <li>Azure OpenAI and authenticated enterprise APIs</li>
+                                    <li>Azure OpenAI and authenticated enterprise APIs with Azure AI Search hybrid retrieval, semantic chunking, reranking, citations, and answerability thresholds</li>
                                     <li>MLflow evaluation for retrieval precision, answer quality, hallucination rate, latency, and failure modes, with human review where operational risk required it</li>
                                 </ul>
+                            </div>
+                            <div class="project-card-footer">
                                 <p class="project-card-impact"><span class="impact-label">Impact:</span> Governed self-service answers with citation support and fail-closed validation before execution.</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card-body">
+                                <p class="project-card-category">Document AI</p>
                                 <h4 class="project-card-title">DOT Document Intelligence &amp; Decision Support</h4>
                                 <p class="project-card-summary">Document intelligence workflow for DOT decision support, combining extraction, reviewer queues, and LLM-assisted evidence validation.</p>
                                 <ul class="project-card-list">
-                                    <li>AWS Textract, custom neural networks, and Python normalization for images and Word documents</li>
+                                    <li>AWS Textract, custom neural networks, and Python normalization for images and Word documents, with LLM-assisted evidence validation</li>
                                     <li>Reviewer queues with lineage, confidence indicators, and exception handling</li>
-                                    <li>LLM-assisted evidence and validation workflow</li>
                                     <li>Source project records report 70% faster processing at approximately 90% extraction accuracy</li>
                                 </ul>
+                            </div>
+                            <div class="project-card-footer">
                                 <p class="project-card-impact"><span class="impact-label">Reported impact:</span> 60% lower decision time and 35% higher data accuracy.</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card-body">
+                                <p class="project-card-category">Applied Machine Learning</p>
                                 <h4 class="project-card-title">Predictive Maintenance Operating Model</h4>
                                 <p class="project-card-summary">Closed-loop predictive maintenance spanning telemetry, model alerts, and technician-facing service recommendations across manufacturing sites.</p>
                                 <ul class="project-card-list">
-                                    <li>ARIMA, XGBoost/LightGBM, anomaly detection, and computer vision used for distinct maintenance problems</li>
-                                    <li>Event-driven alerts and technician-facing service recommendations</li>
-                                    <li>Azure AI/IoT capability scaled across 50+ manufacturing sites</li>
-                                    <li>Closed loop from telemetry and validation through alerting and technician feedback</li>
+                                    <li>ARIMA, XGBoost/LightGBM, anomaly detection, and computer vision applied to distinct maintenance problems</li>
+                                    <li>Event-driven alerts with technician-facing service recommendations</li>
+                                    <li>Azure AI/IoT capability scaled across 50+ manufacturing sites in a closed loop from telemetry and validation through alerting and technician feedback</li>
                                 </ul>
+                            </div>
+                            <div class="project-card-footer">
                                 <p class="project-card-impact"><span class="impact-label">Source records report:</span> 60% lower equipment downtime and approximately $1 million in additional service revenue.</p>
-                            </article>
-                        </div>
+                            </div>
+                        </article>
                     </div>
 
-                    <h3 class="work-group-title">Independent Engineering</h3>
+                    <h3 class="work-group-title independent-group-title">Independent Engineering</h3>
                     <p class="work-group-intro">These projects demonstrate independently built systems across product engineering, multi-agent orchestration, agent operations, LLM reliability, retrieval, machine learning, MLOps, and vertical software development.</p>
 
-                    <div class="independent-project-grid">
-                        <article class="project-card">
+                    <article class="featured-project">
+                        <div class="featured-project-main">
+                            <p class="featured-project-eyebrow">Featured Project</p>
                             <p class="project-card-category">Full-Stack Product Engineering</p>
                             <h4 class="project-card-title">ESL Tutoring Pro — Subscription Learning &amp; Digital-Content Platform</h4>
                             <p class="project-card-summary">A complete WordPress platform for ESL tutors and learners that organizes educational content, controls subscriber access, manages digital downloads, and supports a commercial tutoring-resource business.</p>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> End-to-end ownership across product strategy, UX, WordPress engineering, content architecture, business rules, testing, and deployment—not merely theme customization.</p>
+                        </div>
+                        <div class="featured-project-aside">
                             <ul class="project-card-list">
-                                <li>Built a custom responsive WordPress block theme covering the primary public, account, lesson-library, subscription, and content-discovery experiences</li>
-                                <li>Developed custom platform functionality for lesson metadata, taxonomies, subscription-product mapping, monthly download quotas, protected downloads, download logging, and subscriber quota visibility</li>
-                                <li>Established the local development workspace, testing procedures, technical documentation, staging deployment, and ongoing operating workflow</li>
+                                <li>Custom responsive WordPress block theme for public, account, lesson-library, subscription, and content-discovery experiences</li>
+                                <li>Platform features for lesson metadata, taxonomies, subscription-product mapping, monthly download quotas, protected downloads, logging, and quota visibility</li>
+                                <li>Local development workspace, testing procedures, technical documentation, staging deployment, and ongoing operating workflow</li>
                             </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates end-to-end ownership across product strategy, UX implementation, WordPress engineering, content architecture, business rules, testing, and deployment—not merely theme customization.</p>
-                            <div class="project-card-actions">
-                                <a class="project-card-link" href="https://staging.onlinetutoringresources.com/" target="_blank" rel="noopener noreferrer">View live platform</a>
+                        </div>
+                        <div class="featured-project-actions">
+                            <a class="btn btn-cta btn-cta-primary featured-project-cta" href="https://staging.onlinetutoringresources.com/" target="_blank" rel="noopener noreferrer">View live platform</a>
+                        </div>
+                    </article>
+
+                    <div class="independent-project-grid">
+                        <article class="project-card">
+                            <div class="project-card-body">
+                                <p class="project-card-category">Multi-Agent Systems Engineering</p>
+                                <h4 class="project-card-title">Hierarchical Multi-Agent Orchestration Framework</h4>
+                                <p class="project-card-summary">A controlled system for dividing complex software work among specialized AI agents without letting unvalidated or failed outputs silently affect later stages.</p>
+                                <ul class="project-card-list">
+                                    <li>Top-level orchestrator decomposes requests and delegates bounded tasks to frontend, backend, QA, performance, review, and validation agents</li>
+                                    <li>Shared execution state with dependency-aware handoffs, task identities, artifact lineage, and structured workflow events</li>
+                                    <li>Success/failure gates, fail-closed propagation, human escalation checkpoints, and inspectable Markdown and JSON run reports</li>
+                                </ul>
+                            </div>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Scope:</span> Independent engineering implementation focused on reliable multi-agent coordination—not an employer production system or external user product.</p>
+                                <div class="project-card-actions">
+                                    <p class="project-card-status">Private implementation — architecture and execution walkthrough available.</p>
+                                </div>
                             </div>
                         </article>
 
                         <article class="project-card">
-                            <p class="project-card-category">Multi-Agent Systems Engineering</p>
-                            <h4 class="project-card-title">Hierarchical Multi-Agent Orchestration Framework</h4>
-                            <p class="project-card-summary">A controlled system for dividing complex software work among specialized AI agents while preventing unvalidated or failed outputs from silently affecting later work.</p>
-                            <ul class="project-card-list">
-                                <li>Uses a top-level orchestrator to decompose requests and delegate bounded tasks to specialized frontend, backend, QA, performance, review, and validation agents</li>
-                                <li>Maintains shared execution state, dependency-aware handoffs, task identities, artifact lineage, and structured events across the complete workflow</li>
-                                <li>Enforces success/failure gates, fail-closed propagation, human escalation checkpoints, and inspectable Markdown and JSON run reports</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Focuses specifically on reliable multi-agent coordination: who performs each task, what must complete first, how outputs are validated, and what happens when an agent fails. Independent engineering implementation—not an employer production system or external user product.</p>
-                            <div class="project-card-actions">
-                                <p class="project-card-status">Private implementation — architecture and execution walkthrough available.</p>
+                            <div class="project-card-body">
+                                <p class="project-card-category">Agentic AI Infrastructure &amp; Operations</p>
+                                <h4 class="project-card-title">Agentic AI Operating System — OpenClaw, Hermes and Vault Memory</h4>
+                                <p class="project-card-summary">A persistent personal AI environment connecting communication channels, specialized agents, model providers, project memory, operational controls, and recovery.</p>
+                                <ul class="project-card-list">
+                                    <li>OpenClaw communication and routing with Hermes execution profiles and controlled delegation through Discord and Telegram</li>
+                                    <li>Provider-selection and fallback patterns to reduce dependence on one local model server or hosted inference provider</li>
+                                    <li>Obsidian Vault-as-Memory with Git history, source-of-truth records, encrypted backups, integrity checks, health monitoring, and operator controls</li>
+                                </ul>
+                            </div>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Communication, execution, memory, model access, safety, monitoring, and recovery designed as one operable system.</p>
+                                <div class="project-card-actions">
+                                    <p class="project-card-status">Private personal AI infrastructure with sanitized architecture and operating demonstration available.</p>
+                                </div>
                             </div>
                         </article>
 
                         <article class="project-card">
-                            <p class="project-card-category">Agentic AI Infrastructure &amp; Operations</p>
-                            <h4 class="project-card-title">Agentic AI Operating System — OpenClaw, Hermes and Vault Memory</h4>
-                            <p class="project-card-summary">A persistent personal AI environment that connects communication channels, specialized agents, model providers, project memory, operational controls, and recovery mechanisms.</p>
-                            <ul class="project-card-list">
-                                <li>Connects OpenClaw communication and routing with Hermes specialized execution profiles and controlled delegation through channels such as Discord and Telegram</li>
-                                <li>Uses provider-selection and fallback patterns to reduce dependence on one local model server or hosted inference provider</li>
-                                <li>Uses an Obsidian Vault-as-Memory system with Git history, project source-of-truth records, encrypted backups, integrity verification, health checks, and explicit operator controls</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates how agentic applications are operated as a persistent environment: communication, execution, memory, model access, safety, monitoring, and recovery are designed as one system.</p>
-                            <div class="project-card-actions">
-                                <p class="project-card-status">Private personal AI infrastructure with sanitized architecture and operating demonstration available.</p>
+                            <div class="project-card-body">
+                                <p class="project-card-category">Vertical SaaS &amp; Product Engineering</p>
+                                <h4 class="project-card-title">PriceBook Forge — Offline Pricing Software for Home-Service Contractors</h4>
+                                <p class="project-card-summary">A browser-based tool that helps small HVAC, plumbing, and electrical businesses calculate sustainable flat-rate prices and produce a branded customer price book.</p>
+                                <ul class="project-card-list">
+                                    <li>Calculates break-even and target retail hourly rates from labor, overhead, utilization, and margin assumptions with transparent math</li>
+                                    <li>Editable trade-specific repair tasks that automatically generate Good-Better-Best customer pricing</li>
+                                    <li>Branded printable output with financial assumptions kept in-browser—never transmitted to an application server</li>
+                                </ul>
+                            </div>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Narrow customer segment, measurable financial problem, privacy by architecture, and an immediately usable business deliverable.</p>
+                                <div class="project-card-actions">
+                                    <p class="project-card-status">Product demonstration available.</p>
+                                </div>
                             </div>
                         </article>
 
                         <article class="project-card">
-                            <p class="project-card-category">Vertical SaaS &amp; Product Engineering</p>
-                            <h4 class="project-card-title">PriceBook Forge — Offline Pricing Software for Home-Service Contractors</h4>
-                            <p class="project-card-summary">A browser-based tool that helps small HVAC, plumbing, and electrical businesses calculate sustainable flat-rate prices and produce a branded customer price book.</p>
-                            <ul class="project-card-list">
-                                <li>Calculates break-even and target retail hourly rates from labor, overhead, utilization, and margin assumptions while exposing the underlying math</li>
-                                <li>Includes editable trade-specific repair tasks and automatically generates Good-Better-Best customer pricing</li>
-                                <li>Produces branded, printable output while keeping financial assumptions in the browser without transmitting them to an application server</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates vertical-product thinking: a narrow customer segment, a measurable financial problem, privacy by architecture, and an immediately usable business deliverable.</p>
-                            <div class="project-card-actions">
-                                <p class="project-card-status">Product demonstration available.</p>
+                            <div class="project-card-body">
+                                <p class="project-card-category">LLM Engineering &amp; Reliability</p>
+                                <h4 class="project-card-title">Prompt Compiler — Validated, Self-Correcting LLM Pipelines</h4>
+                                <p class="project-card-summary">A framework that turns ambiguous LLM requests into structured execution contracts and rejects or corrects outputs that fail defined requirements.</p>
+                                <ul class="project-card-list">
+                                    <li>Converts requests into roles, objectives, context, constraints, processes, output schemas, acceptance criteria, and stop conditions</li>
+                                    <li>Pydantic or equivalent schema validation plus critic review to catch structural and semantic failures before acceptance</li>
+                                    <li>Bounded correction loops that feed validation errors back and record execution evidence for testing, debugging, and audit</li>
+                                </ul>
+                            </div>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Reliability as executable validation and correction—not stronger wording inside a prompt alone.</p>
+                                <div class="project-card-actions">
+                                    <p class="project-card-status">Private implementation — validation demonstration available.</p>
+                                </div>
                             </div>
                         </article>
 
                         <article class="project-card">
-                            <p class="project-card-category">LLM Engineering &amp; Reliability</p>
-                            <h4 class="project-card-title">Prompt Compiler — Validated, Self-Correcting LLM Pipelines</h4>
-                            <p class="project-card-summary">A framework that turns ambiguous LLM requests into structured execution contracts and rejects or corrects outputs that fail defined requirements.</p>
-                            <ul class="project-card-list">
-                                <li>Converts requests into explicit roles, objectives, context, constraints, processes, output schemas, acceptance criteria, and stop conditions</li>
-                                <li>Uses Pydantic or equivalent schema validation plus critic review to detect structural and semantic failures before accepting an output</li>
-                                <li>Feeds validation errors into bounded correction loops and records execution evidence for testing, debugging, and audit review</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Reliability rules are implemented as executable validation and correction mechanisms rather than relying only on stronger wording inside a prompt.</p>
-                            <div class="project-card-actions">
-                                <p class="project-card-status">Private implementation — validation demonstration available.</p>
+                            <div class="project-card-body">
+                                <p class="project-card-category">RAG &amp; AI Application Engineering</p>
+                                <h4 class="project-card-title">IT Support Intelligence — Hybrid Retrieval and RAG Platform</h4>
+                                <p class="project-card-summary">A support application that finds relevant historical IT resolutions with keyword and semantic search, then optionally generates a proposed response.</p>
+                                <ul class="project-card-list">
+                                    <li>BM25 keyword search and FAISS vector similarity fused with Reciprocal Rank Fusion so results are not tied to one method</li>
+                                    <li>Sentence-transformer embeddings, FastAPI endpoints, Gradio interface, caching, structured logging, rate controls, and fallbacks</li>
+                                    <li>Approximately 7,000 synthetic support tickets plus retrieval and API tests for indexing, search, and service behavior</li>
+                                </ul>
+                            </div>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Scope:</span> Complete retrieval path from dataset creation and indexing through hybrid ranking, API delivery, generation, fallback, and testing.</p>
+                                <div class="project-card-actions">
+                                    <p class="project-card-status">Private implementation — technical walkthrough available.</p>
+                                </div>
                             </div>
                         </article>
 
                         <article class="project-card">
-                            <p class="project-card-category">RAG &amp; AI Application Engineering</p>
-                            <h4 class="project-card-title">IT Support Intelligence — Hybrid Retrieval and RAG Platform</h4>
-                            <p class="project-card-summary">A support application that finds relevant historical IT resolutions using both keyword and semantic search, then optionally generates a proposed response.</p>
-                            <ul class="project-card-list">
-                                <li>Combines BM25 keyword search and FAISS vector similarity through Reciprocal Rank Fusion so results are not dependent on one retrieval method</li>
-                                <li>Provides sentence-transformer embeddings, FastAPI endpoints, a Gradio interface, caching, structured logging, rate controls, and fallback behavior</li>
-                                <li>Includes approximately 7,000 synthetic support tickets plus retrieval and API tests covering indexing, search, and service behavior</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates the complete retrieval path from dataset creation and indexing to hybrid ranking, API delivery, user interaction, generation, fallback, and testing.</p>
-                            <div class="project-card-actions">
-                                <p class="project-card-status">Private implementation — technical walkthrough available.</p>
+                            <div class="project-card-body">
+                                <p class="project-card-category">Machine Learning &amp; MLOps</p>
+                                <h4 class="project-card-title">Default-Risk ML Service — Training, Tracking, CI/CD and Serverless Inference</h4>
+                                <p class="project-card-summary">A machine-learning service that trains a credit-card default-risk model, tracks experiments, packages inference behind an API, and defines automated cloud deployment.</p>
+                                <ul class="project-card-list">
+                                    <li>TensorFlow and scikit-learn training with MLflow experiment tracking and versioned model artifacts</li>
+                                    <li>FastAPI prediction service in Docker with configurable model and preprocessing artifact loading</li>
+                                    <li>GitHub Actions for testing, image building, deployment workflow, and Google Cloud operational logging</li>
+                                </ul>
                             </div>
-                        </article>
-
-                        <article class="project-card">
-                            <p class="project-card-category">Machine Learning &amp; MLOps</p>
-                            <h4 class="project-card-title">Default-Risk ML Service — Training, Tracking, CI/CD and Serverless Inference</h4>
-                            <p class="project-card-summary">A machine-learning service that trains a credit-card default-risk model, tracks experiments, packages inference behind an API, and defines automated deployment to a managed cloud service.</p>
-                            <ul class="project-card-list">
-                                <li>Trains a credit-card default-risk model using TensorFlow and scikit-learn with tracked experiments and versioned model artifacts through MLflow</li>
-                                <li>Serves prediction probabilities through FastAPI inside a Docker container with configurable model and preprocessing artifact loading</li>
-                                <li>Uses GitHub Actions for testing, image building, deployment workflow, and operational logging through Google Cloud services</li>
-                            </ul>
-                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates the transition from model-development code to a testable, containerized, deployable inference service with a Cloud Run deployment workflow—not a claim of a currently live public endpoint.</p>
-                            <div class="project-card-actions">
-                                <a class="project-card-link" href="https://github.com/Vizo-AI/bank-mlops" target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
+                            <div class="project-card-footer">
+                                <p class="project-card-impact"><span class="impact-label">Differentiator:</span> From model-development code to a testable, containerized inference service with a Cloud Run workflow—not a claim of a currently live public endpoint.</p>
+                                <div class="project-card-actions">
+                                    <a class="project-card-link" href="https://github.com/Vizo-AI/bank-mlops" target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
+                                </div>
                             </div>
                         </article>
                     </div>
