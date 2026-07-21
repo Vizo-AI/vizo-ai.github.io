@@ -10970,3 +10970,326 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* ===== Portfolio upgrades (AI/ML engineering) ===== */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #343a40;
+}
+
+:focus-visible {
+  outline: 3px solid #bd5d38;
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.social-icon:focus-visible,
+.navbar-toggler:focus-visible {
+  outline: 3px solid #bd5d38;
+  outline-offset: 3px;
+}
+
+.location-email,
+.credibility-line,
+.capability-line {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: #495057;
+}
+
+.capability-line {
+  font-size: 1.15rem;
+  max-width: 42rem;
+  line-height: 1.45;
+  text-transform: none;
+  letter-spacing: 0.02rem;
+}
+
+.credibility-line {
+  font-size: 1.05rem;
+  max-width: 42rem;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: 0.02rem;
+}
+
+.lead {
+  max-width: 40rem;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+section.resume-section {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: auto;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  #about.resume-section {
+    min-height: auto;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    align-items: center;
+  }
+
+  #contact.resume-section {
+    min-height: auto;
+    padding-top: 3.25rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 0.35rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #bd5d38;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-cta-primary {
+  background-color: #bd5d38;
+  color: #fff;
+}
+
+.btn-cta-primary:hover,
+.btn-cta-primary:focus {
+  background-color: #974a2d;
+  border-color: #974a2d;
+  color: #fff;
+}
+
+.btn-cta-outline {
+  background-color: transparent;
+  color: #bd5d38;
+}
+
+.btn-cta-outline:hover,
+.btn-cta-outline:focus {
+  background-color: #bd5d38;
+  color: #fff;
+}
+
+.work-group-title {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  color: #343a40;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.project-card-row {
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 1.65rem 1.75rem;
+  border: 1px solid #dee2e6;
+  border-top: 4px solid #bd5d38;
+  background: linear-gradient(180deg, #ffffff 0%, #faf7f5 100%);
+  box-sizing: border-box;
+}
+
+.project-card-title {
+  font-size: 1.28rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.project-card-summary {
+  color: #495057;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 36rem;
+}
+
+.project-card-list {
+  margin-bottom: 1.1rem;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.project-card-list li {
+  margin-bottom: 0.55rem;
+}
+
+.project-card-impact {
+  margin-bottom: 0;
+  margin-top: auto;
+  padding: 0.85rem 0.95rem;
+  border-top: 1px solid #e9ecef;
+  border-left: 3px solid #bd5d38;
+  background-color: rgba(189, 93, 56, 0.06);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #343a40;
+}
+
+.project-card-impact .impact-label {
+  font-weight: 700;
+  color: #bd5d38;
+  margin-right: 0.25rem;
+}
+
+.project-card-link {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.skill-group {
+  height: 100%;
+  padding: 1.35rem 1.45rem;
+  border-left: 4px solid #bd5d38;
+  background-color: #f8f9fa;
+}
+
+.skill-group-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.skill-group p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 40rem;
+}
+
+.experience-entry {
+  max-width: 52rem;
+  gap: 0.75rem;
+}
+
+.experience-entry h3 {
+  margin-bottom: 0.35rem;
+}
+
+.experience-entry .subheading {
+  margin-bottom: 0.85rem;
+}
+
+.experience-dates {
+  display: inline-block;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.experience-bullets {
+  max-width: 42rem;
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.experience-bullets li {
+  margin-bottom: 0.65rem;
+}
+
+.experience-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-entry-compact h3 {
+  font-size: 1.35rem;
+}
+
+.education-entry {
+  max-width: 48rem;
+  gap: 0.5rem;
+}
+
+.leadership-block {
+  height: 100%;
+  padding: 1.35rem 1.45rem;
+  border-top: 4px solid #bd5d38;
+  background-color: #f8f9fa;
+}
+
+.leadership-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.leadership-list {
+  margin-bottom: 0;
+  padding-left: 1.15rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 28rem;
+}
+
+.leadership-list li {
+  margin-bottom: 0.55rem;
+}
+
+.contact-details {
+  font-size: 1.15rem;
+}
+
+.social-icons .social-icon:focus-visible {
+  background-color: #bd5d38;
+}
+
+@media (max-width: 575.98px) {
+  .cta-group .btn-cta {
+    width: 100%;
+  }
+
+  .project-card {
+    padding: 1.35rem 1.4rem;
+  }
+
+  h1 {
+    font-size: calc(1.8rem + 2.5vw);
+  }
+
+  .experience-dates {
+    white-space: normal;
+  }
+}
