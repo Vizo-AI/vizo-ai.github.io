@@ -115,7 +115,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -10861,7 +10861,7 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
@@ -10871,8 +10871,12 @@ p.lead {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+#sideNav .navbar-brand,
+#sideNav .nav-link {
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
@@ -11006,9 +11010,13 @@ a:focus-visible,
 }
 
 #about h1 {
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(3.25rem, 7vw, 5.4rem);
+  font-weight: 800;
   line-height: 1.05;
   margin-bottom: 0.35rem;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 @media (min-width: 576px) {
@@ -11024,8 +11032,12 @@ a:focus-visible,
 .hero-title {
   margin-top: 0.35rem;
   margin-bottom: 0;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 700;
   line-height: 1.3;
+  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
 .hero-meta {
@@ -11033,7 +11045,7 @@ a:focus-visible,
 }
 
 .location-email {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
@@ -11156,7 +11168,7 @@ section.resume-section {
   min-height: 2.75rem;
   padding: 0.55rem 1.15rem;
   border-radius: 0.35rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 700;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
@@ -11243,14 +11255,46 @@ section.resume-section {
   margin-bottom: 1.5rem;
 }
 
+.hero-title,
+section.resume-section h2,
+.work-group-title,
+.experience-entry h3,
+.experience-entry .subheading,
+.skill-group-title,
+.leadership-title,
+.education-entry h3,
+.education-entry .subheading {
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: -0.01em;
+}
+
+section.resume-section h2 {
+  font-weight: 800;
+  line-height: 1.15;
+}
+
 .work-group-title {
   font-size: 1.35rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04rem;
+  font-weight: 700;
+  line-height: 1.25;
   color: #343a40;
   margin-bottom: 0.75rem;
   padding-bottom: 0.4rem;
   border-bottom: 2px solid #e9ecef;
+}
+
+.experience-entry h3,
+.skill-group-title,
+.leadership-title,
+.education-entry h3 {
+  font-weight: 700;
+}
+
+.experience-entry .subheading,
+.education-entry .subheading {
+  font-weight: 600;
 }
 
 .independent-group-title {
@@ -11317,6 +11361,7 @@ section.resume-section {
 
 .project-card-category {
   margin: 0 0 0.55rem;
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -11326,11 +11371,17 @@ section.resume-section {
 }
 
 .project-card-title {
-  font-size: 1.28rem;
-  margin-bottom: 0.85rem;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1.2rem, 1.45vw, 1.42rem);
+  font-weight: 700;
   line-height: 1.35;
-  overflow-wrap: anywhere;
-  hyphens: auto;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
+  margin-bottom: 0.85rem;
 }
 
 .project-card-summary {
@@ -11442,6 +11493,7 @@ section.resume-section {
 
 .featured-project-eyebrow {
   margin: 0 0 0.65rem;
+  font-family: "Saira Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -11451,7 +11503,9 @@ section.resume-section {
 }
 
 .featured-project .project-card-title {
-  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  font-size: clamp(1.35rem, 1.8vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .featured-project .project-card-summary {
@@ -11500,8 +11554,6 @@ section.resume-section {
 .skill-group-title {
   font-size: 1.15rem;
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04rem;
 }
 
 .skill-group p {
@@ -11564,8 +11616,6 @@ section.resume-section {
 .leadership-title {
   font-size: 1.15rem;
   margin-bottom: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04rem;
 }
 
 .leadership-list {
