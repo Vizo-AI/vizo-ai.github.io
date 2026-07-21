@@ -1,34 +1,42 @@
 # Vijay Sojitra — AI/ML Portfolio
 
-**Live site:** [https://vizo-ai.github.io/](https://vizo-ai.github.io/)
+[View the live portfolio](https://vizo-ai.github.io/)
 
-Static portfolio for **Vijay Sojitra**, Full-Stack AI/ML Engineer & Applied Statistician — production data pipelines, machine learning, MLOps/LLMOps, LLM systems, and agentic workflows.
+Personal portfolio of **Vijay Sojitra**, a Full-Stack AI/ML Engineer and Applied Statistician. The site presents selected work across large-scale data engineering, production machine learning, MLOps/LLMOps, governed LLM systems, statistical modeling, and agentic workflows.
 
-Hosted on GitHub Pages from the `main` branch of [`Vizo-AI/vizo-ai.github.io`](https://github.com/Vizo-AI/vizo-ai.github.io).
+## Portfolio contents
 
-Built with the [`startbootstrap-resume`](https://github.com/StartBootstrap/startbootstrap-resume) template (static HTML/CSS/JS; no build step).
+- Selected enterprise and independent AI/ML engineering work
+- Professional experience and measurable outcomes
+- Technical capabilities across data, ML, cloud, MLOps, and GenAI
+- Leadership, engineering principles, and education
+- Links to public repositories and professional profiles
+
+## Technology
+
+Static HTML, CSS, and JavaScript, deployed through GitHub Pages from the `main` branch.
 
 ## Local preview
 
-Serve the site root directly:
+From the repository root:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://127.0.0.1:8000`.
+Open `http://127.0.0.1:8000`.
 
-## Deploy
+## Deployment
 
-Push to `main`. GitHub Pages serves the repository root.
+Changes merged into `main` are published through GitHub Pages.
 
 ```bash
 git switch main
+git pull --ff-only origin main
 git merge --no-ff your-feature-branch
 git push origin main
 ```
 
-## Credits
+## Repository scope
 
-- Theme by [Start Bootstrap](https://github.com/StartBootstrap/startbootstrap-resume)
-- Hosted on [GitHub Pages](https://pages.github.com/)
+This repository contains the public source for my personal portfolio. Personal content, résumé material, project descriptions, branding, and images are not intended for reuse.
