@@ -1,84 +1,34 @@
-# vizo-ai.github.io — Projects Portfolio
+# Vijay Sojitra — AI/ML Portfolio
 
-🎯 **Live Site:** [https://vizo-ai.github.io/](https://vizo-ai.github.io/)
+**Live site:** [https://vizo-ai.github.io/](https://vizo-ai.github.io/)
 
-This is the personal AI resume and portfolio website of **Vijay**, an experienced AI & Data Scientist with 8+ years of industry expertise in building intelligent, production-grade machine learning systems.
+Static portfolio for **Vijay Sojitra**, Full-Stack AI/ML Engineer & Applied Statistician — production data pipelines, machine learning, MLOps/LLMOps, LLM systems, and agentic workflows.
 
-Built with the [`startbootstrap-resume`](https://github.com/StartBootstrap/startbootstrap-resume) template and customized to showcase real-world projects, visualizations, and experience in:
+Hosted on GitHub Pages from the `main` branch of [`Vizo-AI/vizo-ai.github.io`](https://github.com/Vizo-AI/vizo-ai.github.io).
 
-- Generative AI (LLMs, RAG, Diffusion)
-- Prompt Engineering & Fine-Tuning
-- MLOps & Cloud-Native Pipelines
-- Autonomous Agentic Systems
-- AWS, GCP, Databricks, Snowflake
-- NLP, ARIMA, Bayesian Modeling
-- Python, SQL, Tableau, Power BI
+Built with the [`startbootstrap-resume`](https://github.com/StartBootstrap/startbootstrap-resume) template (static HTML/CSS/JS; no build step).
 
----
+## Local preview
 
-## 🚀 Getting Started Locally
-
-> To run this site locally and make changes:
+Serve the site root directly:
 
 ```bash
-# 1. Clone the StartBootstrap source repo (not this one)
-git clone https://github.com/StartBootstrap/startbootstrap-resume.git
-cd startbootstrap-resume
-
-# 2. Install dependencies
-npm install
-
-# 3. Start development server
-npm start
+python3 -m http.server 8000
 ```
 
-This opens a live-preview server. Edit content in `src/pug/index.pug`, save, and the site auto-refreshes.
+Then open `http://127.0.0.1:8000`.
 
----
+## Deploy
 
-## 🛠️ Building and Deploying
-
-To publish updates to `vizo-ai.github.io`:
+Push to `main`. GitHub Pages serves the repository root.
 
 ```bash
-# 1. Build the project (from startbootstrap-resume directory)
-npm run build
-
-# 2. Copy the generated site to this repo
-cp -r dist/* ../vizo-ai.github.io/
-
-# 3. Push changes
-cd ../vizo-ai.github.io
-git add .
-git commit -m "Update site"
+git switch main
+git merge --no-ff your-feature-branch
 git push origin main
 ```
 
----
+## Credits
 
-## 📁 Repository Structure
-
-This repository **only contains the built static website** (`index.html`, `css/`, `js/`, etc.) — ideal for GitHub Pages hosting.
-
-If you're looking for the editable source files, work out of the original `startbootstrap-resume` folder.
-
----
-
-## 📸 Customization Features
-
-- Fully personalized resume layout
-- Icon-based skills section (Databricks, Snowflake, GCP, etc.)
-- Real-time project links and visualizations
-- Font Awesome & custom SVG icons support
-- Responsive design (mobile-friendly)
-
----
-
-## 📅 Last Updated
-July 18, 2025
-
----
-
-## 🧠 Credits
 - Theme by [Start Bootstrap](https://github.com/StartBootstrap/startbootstrap-resume)
-- Deployed using [GitHub Pages](https://pages.github.com/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
