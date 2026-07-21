@@ -136,35 +136,118 @@
                     </div>
 
                     <h3 class="work-group-title">Independent Engineering</h3>
-                    <div class="row project-card-row g-4">
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
-                                <h4 class="project-card-title">Bank Default-Risk ML API</h4>
-                                <p class="project-card-summary">Independent MLOps project that trains a credit-card default-risk model and serves predictions through a containerized FastAPI service.</p>
-                                <ul class="project-card-list">
-                                    <li>Model training with TensorFlow and scikit-learn</li>
-                                    <li>Experiment tracking with MLflow</li>
-                                    <li>Dockerized FastAPI service with GitHub Actions CI</li>
-                                    <li>Google Cloud Run deployment pattern</li>
-                                </ul>
-                                <p class="project-card-impact">
-                                    <a class="project-card-link" href="https://github.com/Vizo-AI/bank-mlops" target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 d-flex">
-                            <article class="project-card">
-                                <h4 class="project-card-title">Hierarchical Multi-Agent Orchestration Framework</h4>
-                                <p class="project-card-summary">Independent implementation of a hierarchical orchestrator that delegates work to specialized engineering and validation agents with explicit control gates.</p>
-                                <ul class="project-card-list">
-                                    <li>Top-level orchestrator with dependency-aware handoffs and shared execution state</li>
-                                    <li>Explicit success/failure gates and fail-closed propagation controls</li>
-                                    <li>Human escalation checkpoints</li>
-                                    <li>Structured JSON audit logs, artifact lineage, and automated Markdown run reports for debugging and replay</li>
-                                </ul>
-                                <p class="project-card-impact"><span class="impact-label">Scope:</span> Independent engineering implementation—not an employer production system.</p>
-                            </article>
-                        </div>
+                    <p class="work-group-intro">These projects demonstrate independently built systems across product engineering, multi-agent orchestration, agent operations, LLM reliability, retrieval, machine learning, MLOps, and vertical software development.</p>
+
+                    <div class="independent-project-grid">
+                        <article class="project-card">
+                            <p class="project-card-category">Full-Stack Product Engineering</p>
+                            <h4 class="project-card-title">ESL Tutoring Pro — Subscription Learning &amp; Digital-Content Platform</h4>
+                            <p class="project-card-summary">A complete WordPress platform for ESL tutors and learners that organizes educational content, controls subscriber access, manages digital downloads, and supports a commercial tutoring-resource business.</p>
+                            <ul class="project-card-list">
+                                <li>Built a custom responsive WordPress block theme covering the primary public, account, lesson-library, subscription, and content-discovery experiences</li>
+                                <li>Developed custom platform functionality for lesson metadata, taxonomies, subscription-product mapping, monthly download quotas, protected downloads, download logging, and subscriber quota visibility</li>
+                                <li>Established the local development workspace, testing procedures, technical documentation, staging deployment, and ongoing operating workflow</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates end-to-end ownership across product strategy, UX implementation, WordPress engineering, content architecture, business rules, testing, and deployment—not merely theme customization.</p>
+                            <div class="project-card-actions">
+                                <a class="project-card-link" href="https://staging.onlinetutoringresources.com/" target="_blank" rel="noopener noreferrer">View live platform</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">Multi-Agent Systems Engineering</p>
+                            <h4 class="project-card-title">Hierarchical Multi-Agent Orchestration Framework</h4>
+                            <p class="project-card-summary">A controlled system for dividing complex software work among specialized AI agents while preventing unvalidated or failed outputs from silently affecting later work.</p>
+                            <ul class="project-card-list">
+                                <li>Uses a top-level orchestrator to decompose requests and delegate bounded tasks to specialized frontend, backend, QA, performance, review, and validation agents</li>
+                                <li>Maintains shared execution state, dependency-aware handoffs, task identities, artifact lineage, and structured events across the complete workflow</li>
+                                <li>Enforces success/failure gates, fail-closed propagation, human escalation checkpoints, and inspectable Markdown and JSON run reports</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Focuses specifically on reliable multi-agent coordination: who performs each task, what must complete first, how outputs are validated, and what happens when an agent fails. Independent engineering implementation—not an employer production system or external user product.</p>
+                            <div class="project-card-actions">
+                                <p class="project-card-status">Private implementation — architecture and execution walkthrough available.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">Agentic AI Infrastructure &amp; Operations</p>
+                            <h4 class="project-card-title">Agentic AI Operating System — OpenClaw, Hermes and Vault Memory</h4>
+                            <p class="project-card-summary">A persistent personal AI environment that connects communication channels, specialized agents, model providers, project memory, operational controls, and recovery mechanisms.</p>
+                            <ul class="project-card-list">
+                                <li>Connects OpenClaw communication and routing with Hermes specialized execution profiles and controlled delegation through channels such as Discord and Telegram</li>
+                                <li>Uses provider-selection and fallback patterns to reduce dependence on one local model server or hosted inference provider</li>
+                                <li>Uses an Obsidian Vault-as-Memory system with Git history, project source-of-truth records, encrypted backups, integrity verification, health checks, and explicit operator controls</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates how agentic applications are operated as a persistent environment: communication, execution, memory, model access, safety, monitoring, and recovery are designed as one system.</p>
+                            <div class="project-card-actions">
+                                <p class="project-card-status">Private personal AI infrastructure with sanitized architecture and operating demonstration available.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">Vertical SaaS &amp; Product Engineering</p>
+                            <h4 class="project-card-title">PriceBook Forge — Offline Pricing Software for Home-Service Contractors</h4>
+                            <p class="project-card-summary">A browser-based tool that helps small HVAC, plumbing, and electrical businesses calculate sustainable flat-rate prices and produce a branded customer price book.</p>
+                            <ul class="project-card-list">
+                                <li>Calculates break-even and target retail hourly rates from labor, overhead, utilization, and margin assumptions while exposing the underlying math</li>
+                                <li>Includes editable trade-specific repair tasks and automatically generates Good-Better-Best customer pricing</li>
+                                <li>Produces branded, printable output while keeping financial assumptions in the browser without transmitting them to an application server</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates vertical-product thinking: a narrow customer segment, a measurable financial problem, privacy by architecture, and an immediately usable business deliverable.</p>
+                            <div class="project-card-actions">
+                                <p class="project-card-status">Product demonstration available.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">LLM Engineering &amp; Reliability</p>
+                            <h4 class="project-card-title">Prompt Compiler — Validated, Self-Correcting LLM Pipelines</h4>
+                            <p class="project-card-summary">A framework that turns ambiguous LLM requests into structured execution contracts and rejects or corrects outputs that fail defined requirements.</p>
+                            <ul class="project-card-list">
+                                <li>Converts requests into explicit roles, objectives, context, constraints, processes, output schemas, acceptance criteria, and stop conditions</li>
+                                <li>Uses Pydantic or equivalent schema validation plus critic review to detect structural and semantic failures before accepting an output</li>
+                                <li>Feeds validation errors into bounded correction loops and records execution evidence for testing, debugging, and audit review</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Reliability rules are implemented as executable validation and correction mechanisms rather than relying only on stronger wording inside a prompt.</p>
+                            <div class="project-card-actions">
+                                <p class="project-card-status">Private implementation — validation demonstration available.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">RAG &amp; AI Application Engineering</p>
+                            <h4 class="project-card-title">IT Support Intelligence — Hybrid Retrieval and RAG Platform</h4>
+                            <p class="project-card-summary">A support application that finds relevant historical IT resolutions using both keyword and semantic search, then optionally generates a proposed response.</p>
+                            <ul class="project-card-list">
+                                <li>Combines BM25 keyword search and FAISS vector similarity through Reciprocal Rank Fusion so results are not dependent on one retrieval method</li>
+                                <li>Provides sentence-transformer embeddings, FastAPI endpoints, a Gradio interface, caching, structured logging, rate controls, and fallback behavior</li>
+                                <li>Includes approximately 7,000 synthetic support tickets plus retrieval and API tests covering indexing, search, and service behavior</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates the complete retrieval path from dataset creation and indexing to hybrid ranking, API delivery, user interaction, generation, fallback, and testing.</p>
+                            <div class="project-card-actions">
+                                <p class="project-card-status">Private implementation — technical walkthrough available.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-card-category">Machine Learning &amp; MLOps</p>
+                            <h4 class="project-card-title">Default-Risk ML Service — Training, Tracking, CI/CD and Serverless Inference</h4>
+                            <p class="project-card-summary">A machine-learning service that trains a credit-card default-risk model, tracks experiments, packages inference behind an API, and defines automated deployment to a managed cloud service.</p>
+                            <ul class="project-card-list">
+                                <li>Trains a credit-card default-risk model using TensorFlow and scikit-learn with tracked experiments and versioned model artifacts through MLflow</li>
+                                <li>Serves prediction probabilities through FastAPI inside a Docker container with configurable model and preprocessing artifact loading</li>
+                                <li>Uses GitHub Actions for testing, image building, deployment workflow, and operational logging through Google Cloud services</li>
+                            </ul>
+                            <p class="project-card-impact"><span class="impact-label">Differentiator:</span> Demonstrates the transition from model-development code to a testable, containerized, deployable inference service with a Cloud Run deployment workflow—not a claim of a currently live public endpoint.</p>
+                            <div class="project-card-actions">
+                                <a class="project-card-link" href="https://github.com/Vizo-AI/bank-mlops" target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="independent-project-footer">
+                        <p>Additional machine-learning, data-science, MLOps, and AI engineering work is available on GitHub.</p>
+                        <a class="project-card-link" href="https://github.com/Vizo-AI" target="_blank" rel="noopener noreferrer">Explore more on GitHub</a>
                     </div>
                 </div>
             </section>
