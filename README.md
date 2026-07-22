@@ -1,6 +1,6 @@
 # Vijay Sojitra — AI/ML Portfolio
 
-[View the live portfolio](https://vizo-ai.github.io/)
+[View the live portfolio](https://vjsojitra.ixo8.com/)
 
 Personal portfolio of **Vijay Sojitra**, a Full-Stack AI/ML Engineer and Applied Statistician. The site presents selected work across large-scale data engineering, production machine learning, MLOps/LLMOps, governed LLM systems, statistical modeling, and agentic workflows.
 
